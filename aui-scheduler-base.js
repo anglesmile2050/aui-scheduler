@@ -3095,7 +3095,7 @@ var SchedulerView = A.Component.create({
          * @type {Number}
          */
         height: {
-            value: 550 //modified by qy
+            value: window.innerHeight - 120 //modified by qy, a temp change, need to find a better solution later
         },
 
         /**
