@@ -5,3 +5,4 @@ The "day1" in the schedulerdayview stands for the plan and the "day2" in the sch
 <br>
 
 the below files has been changed without adding test cases.
+<br>corresponding build.json needs to be modified as well.
