@@ -2403,6 +2403,7 @@ var SchedulerBase = A.Component.create({
             instance.viewsSelectNode = instance.get('viewsSelectNode');
             instance.todayNode = instance.get('todayNode');
             instance.viewsNode = instance.get('viewsNode');
+            //instance.height = instance.get('height');
 
             instance._populateViewNodes();
 
@@ -3095,7 +3096,7 @@ var SchedulerView = A.Component.create({
          * @type {Number}
          */
         height: {
-            value: window.innerHeight - 120 //modified by qy, a temp change, need to find a better solution later
+            value: window.innerHeight - 120//550 //modified by qy
         },
 
         /**

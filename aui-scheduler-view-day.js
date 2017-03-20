@@ -140,7 +140,7 @@ var Lang = A.Lang,
 
     //modified by qy
     TPL_SCHEDULER_VIEW_DAY_HEADER_DAY = '<th class="' + CSS_SCHEDULER_VIEW_DAY_HEADER_DAY +
-        '" data-colnumber="{colNumber}"></th>', //<a href="#">&nbsp;</a></th>'
+        '" data-colnumber="{colNumber}"><a href="#">&nbsp;</a></th>', //<a href="#">&nbsp;</a></th>'
     TPL_SCHEDULER_VIEW_DAY_HEADER_DAY_CONTENT = '<span class="' + CSS_SCHEDULER_VIEW_DAY_HEADER_DAY_WEEKDAY + '">%a</span> <span class="' +
         CSS_SCHEDULER_VIEW_DAY_HEADER_DAY_NUMBER + '">%d</span>',
     TPL_SCHEDULER_VIEW_DAY_HEADER_DAY_FIRST = '<td class="' + [CSS_SCHEDULER_VIEW_DAY_HEADER_DAY,
@@ -327,7 +327,7 @@ var SchedulerDayView = A.Component.create({
          * @type {Number}
          */
         hourHeight: {
-            value: 52,
+            value: 104,//modified by qy
             validator: isNumber
         },
 
@@ -591,8 +591,8 @@ var SchedulerDayView = A.Component.create({
         bindUI: function() {
             var instance = this;
 
-            instance.headerTableNode.delegate(
-                'click', A.bind(instance._onClickDaysHeader, instance), '.' + CSS_SCHEDULER_VIEW_DAY_HEADER_DAY);
+            //instance.headerTableNode.delegate(
+            //    'click', A.bind(instance._onClickDaysHeader, instance), '.' + CSS_SCHEDULER_VIEW_DAY_HEADER_DAY);
 
             this._bindMouseEvents();
 
